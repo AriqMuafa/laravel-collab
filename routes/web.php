@@ -19,3 +19,7 @@ Route::get('/chatbot', function () {
 });
 
 Route::post('/ask-llama', [LlamaController::class, 'ask']);
+
+Route::get('/react', function () {
+    return view('react');
+});
